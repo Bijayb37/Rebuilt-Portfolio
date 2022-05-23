@@ -1,5 +1,10 @@
-import { Flex, FlexProps } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
-export const Footer = (props: FlexProps) => (
-  <Flex as="footer" py="8rem" {...props} />
-)
+export default function Footer() {
+  return (
+    <Box mt={5} textAlign="center" opacity={0.4} fontSize="sm">
+      &copy; {new Date().getFullYear()} Bijay Bohora. All Rights Reserved.
+    </Box>
+  )
+}
+
