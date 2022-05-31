@@ -123,7 +123,6 @@ export default function Navbar(props) {
 
         <Box flex={1} textAlign="right">
           <DarkModeSwitch />
-
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton

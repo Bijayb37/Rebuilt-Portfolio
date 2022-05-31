@@ -7,23 +7,22 @@ const variants = {
   exit: { opacity: 0, x: 0, y: 100 },
 }
 
-
 export default function Articles({ children, title = "" }) {
   const realTitle = `${title} - Bijay Bohora`
   return (
-      <motion.main
-        initial="hidden"
-        animate="enter"
-        exit="exit"
-        variants={variants}
-        transition={{ duration: 0.4, type: "easeInOut" }}
-      >
-        {title && (
-          <Head>
-            <title>{realTitle}</title>
-          </Head>
-        )}
-        {children}
-      </motion.main>
+    <motion.main
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      variants={variants}
+      transition={{ duration: 0.4, type: "easeInOut" }}
+    >
+      {title && (
+        <Head>
+          <title>{realTitle}</title>
+        </Head>
+      )}
+      {children}
+    </motion.main>
   )
 }

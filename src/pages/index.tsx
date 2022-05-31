@@ -113,6 +113,14 @@ const Index = () => (
           major from Swinbure University of Technology
         </BioSection>
       </Sections>
+      <Sections delay={0.3}>
+        <Heading variant="section-title">
+        My Passions ♥
+        </Heading>
+        <Paragraph>
+          Music (Piano & Guitar), Photography, Movies, Video Games
+        </Paragraph>
+      </Sections>
     </Container>
   </Layout>
 )
