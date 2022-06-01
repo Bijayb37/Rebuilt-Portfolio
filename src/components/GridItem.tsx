@@ -28,6 +28,8 @@ export default function GridItem({ data, children }) {
           src={imageSrc}
           alt={title}
           borderRadius="12px"
+          objectFit="cover"
+          objectPosition="0% 0%"
         />
         <Link href={`/projects/${routeUrl}`} passHref scroll={false}>
           <Heading size="md">
