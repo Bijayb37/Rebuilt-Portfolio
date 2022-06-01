@@ -39,8 +39,8 @@ export const projectGridData = [
   {
     title: "Issue Tracker",
     routeUrl: "issueTracker",
-    demoUrl: "https://bb-issuetracker.netlify.app",
-    githubUrl: "https://github.com/Bijayb37/Issue-Tracker",
+    demoUrl: "https://issue-tracker2.vercel.app/",
+    githubUrl: "https://github.com/Bijayb37/IssueTracker2",
     description:
       "An Issue-Tracker built with React with a nodeJS backend using express and mongoDB",
     imageSrc: "/issueTracker.png",
@@ -127,8 +127,8 @@ export const projectPageData = {
       "Vercel & Netlify",
       "Mongoose",
     ],
-    demoUrl: "https://bb-issuetracker.netlify.app",
-    githubUrl: "https://github.com/Bijayb37/Issue-Tracker",
+    demoUrl: "https://issue-tracker2.vercel.app/",
+    githubUrl: "https://github.com/Bijayb37/IssueTracker2",
     description:
       "Issue Tracker that connects a React frontend to a node and mongo backend, with a RESTful api and full CRUD operations, with features such as issue history and comments, password authentication with jsonwebtoken and bcrypt.",
     list: [
