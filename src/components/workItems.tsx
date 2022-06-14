@@ -58,6 +58,8 @@ export const WorkImage = ({ src, alt }) => {
         alt={img}
         height={664}
         width={372}
+        objectFit="cover"
+        objectPosition="0% 0%"
         borderRadius="10px"
       />
     ))

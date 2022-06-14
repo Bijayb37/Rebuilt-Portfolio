@@ -7,35 +7,27 @@ export const workData =
 
 export const workSkills = {
   frontend: [
-  "React",
-  "Typescript",
-  "Next.js",
-  "HTML, CSS, JavaScript",
-  "Chakra-UI",
-  "Material-UI",
-  "Bootstrap",
-  "Redux/MobX/MST/Context",
-  "Jest & RTL"
-], 
- backend: [
-  "Node.js",
-  "Express.js",
-  "RESTful APIs",
-  "PostgreSQL",
-  "MongoDB",
-  "Firebase"
- ]
+    "React",
+    "Typescript",
+    "Next.js",
+    "HTML, CSS, JavaScript",
+    "Chakra-UI",
+    "Material-UI",
+    "Bootstrap",
+    "Redux/MobX/MST/Context",
+    "Jest & RTL",
+  ],
+  backend: [
+    "Node.js",
+    "Express.js",
+    "RESTful APIs",
+    "PostgreSQL",
+    "MongoDB",
+    "Firebase",
+  ],
 }
 
 export const projectGridData = [
-  {
-    title: "F.R.I.E.N.D.S Group Chat App",
-    routeUrl: "friends",
-    description:
-      "An App to create chatrooms of one or more people, with authentication by firebase",
-    imageSrc: "/chatapp.png",
-    role: ["full stack developer"],
-  },
   {
     title: "Issue Tracker",
     routeUrl: "issueTracker",
@@ -55,6 +47,14 @@ export const projectGridData = [
       "expressJS",
       "bcrypt&jsonWebToken",
     ],
+  },
+  {
+    title: "F.R.I.E.N.D.S Group Chat App",
+    routeUrl: "friends",
+    description:
+      "An App to create chatrooms of one or more people, with authentication by firebase",
+    imageSrc: "/chatapp.png",
+    role: ["full stack developer"],
   },
   {
     title: "Color Pallete",
