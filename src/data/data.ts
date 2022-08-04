@@ -57,6 +57,14 @@ export const projectGridData = [
     role: ["full stack developer"],
   },
   {
+    title: "GraphQL Node.JS PostgreSQL & Prisma Server",
+    routeUrl: "nodegraphql",
+    description:
+      "A template graphQl server using prisma, docker, and postgreSQL",
+    imageSrc: "/graphqlquery.png",
+    role: ["full stack developer"],
+  },
+  {
     title: "Color Pallete",
     routeUrl: "colorpallete",
     demoUrl: "https://color-pallete-with-hooks.vercel.app",
@@ -161,6 +169,17 @@ export const projectPageData = {
       "Create Custom Css color pallettes",
       "Support for multiple color types eg. rgb, rgba, hex",
       "Copy to clipboard functionality",
+    ],
+  },
+  nodegraphql: {
+    githubUrl: "https://github.com/Bijayb37/Color-Pallete-with-hooks",
+    description:
+      "Custom node grapql server example using Prisma, postgreSQL and docker, boiler plate so more advanced servers can be created on top of it.",
+    tech: ["Node.JS", "Docker", "PostgreSQL", "Prisma", "React", "Javascript"],
+    list: [
+      "custom node.js backend server",
+      "PostgreSQL database in a docker container",
+      "GraphQl Api using apollo-server and Prisma",
     ],
   },
   twit: {

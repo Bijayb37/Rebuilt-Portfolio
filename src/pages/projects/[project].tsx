@@ -29,23 +29,26 @@ export default function Project() {
     <ListItem key={i}>{l}</ListItem>
   ))
   const projectDescriptions = foundProject?.description
-  const projectImages = foundProject?.images.map((img, i) => (
+  const projectImages = foundProject?.images && foundProject?.images.map((img, i) => (
     <WorkImage src={img} alt={img} key={i} />
-  ))
+  )) 
 
   return (
     <Layout title={projectTitle}>
       <Container>
         <WorkTitle>{project && projectTitle}</WorkTitle>
-        <Link href={foundProject?.demoUrl} target="_blank">
-          <Button
-            variant="ghost"
-            colorScheme={useColorModeValue("cyan", "teal")}
-            leftIcon={<IoLinkSharp />}
-          >
-            Live App
-          </Button>
-        </Link>
+        {foundProject?.demoUrl && (
+          <Link href={foundProject?.demoUrl} target="_blank">
+            <Button
+              variant="ghost"
+              colorScheme={useColorModeValue("cyan", "teal")}
+              leftIcon={<IoLinkSharp />}
+            >
+              Live App
+            </Button>
+          </Link>
+        )}
+
         <Link href={foundProject?.githubUrl} target="_blank">
           <Button
             variant="ghost"
@@ -58,7 +61,9 @@ export default function Project() {
         <Paragraph size="1.1em">{projectDescriptions}</Paragraph>
         <UnorderedList my={3}>{projectList}</UnorderedList>
         <Box mb={3}>{projectTech}</Box>
-        <Flex direction="column" align="center">{projectImages}</Flex>
+        <Flex direction="column" align="center">
+          {projectImages}
+        </Flex>
       </Container>
     </Layout>
   )
