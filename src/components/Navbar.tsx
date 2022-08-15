@@ -76,7 +76,7 @@ export default function Navbar(props) {
                 fontWeight="bold"
                 ml={3}
               >
-                Bijay Bohora
+                Bijay Bohora Whatever
               </Text>
             </Heading>
           </NextLink>
