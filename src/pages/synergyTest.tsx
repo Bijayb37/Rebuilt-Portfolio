@@ -45,6 +45,4 @@ export default function tute() {
       <p>Age: {data.age}</p>
     </div>
   )
-
-  return <div>This is basic state</div>
 }
