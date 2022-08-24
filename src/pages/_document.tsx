@@ -5,7 +5,9 @@ export default class Document extends NextDocument {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> 
+        </Head>
         <body>
           {/* Make Color mode to persists when you refresh the page. */}
           <ColorModeScript />
