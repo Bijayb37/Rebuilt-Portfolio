@@ -5,7 +5,7 @@ import React from "react"
 export default function tute() {
   const headers = {
     "content-type": "application/json",
-    Authorization: "Bearer BFxSCyRFvQdBym6eDRw-eGV2F51UrAN3",
+    "Authorization": process.env.token,
   }
 
   async function axis() {
@@ -32,12 +32,12 @@ export default function tute() {
     return await result.data.data.entries
   }
 
-  const { isLoading, error, data: fullData, isFetching } = useQuery(["repoData"], () =>
+  const { isLoading, data: fullData } = useQuery(["repoData"], () =>
     axis()
   )
   if (isLoading) return <div>...Loading</div>
   let data = fullData[0]
-  console.log(data)
+  
   return (
     <div>
       <h1>Fullname: {data.fullname}</h1>
